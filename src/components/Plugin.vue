@@ -1,13 +1,23 @@
 <template>
   <div class="plugin" v-if="plugin">
+    <div style="display: flex; justify-content: space-between;">
     <h1>{{ plugin.name }} 
-    <button v-on:click="addPlugin(plugin.url)">add plugin</button></h1>
-    {{ plugin.description }}
+    <button v-on:click="addPlugin(plugin)">add plugin</button></h1>
+    {{plugin.author}}
+    </div>
+        <div style="display: flex; justify-content: space-between;">
+          <p>
+            {{ plugin.description }}
+          </p>
+          <a v-bind:href="plugin.homepage">Homepage</a>
+    </div>
+    
   </div>
 </template>
 
 <script>
 import { addPlugin } from "../config";
+import { useToast } from "vue-toastification";
 
 export default {
   name: "Plugin",
@@ -18,9 +28,11 @@ export default {
     return {};
   },
   methods: {
-    addPlugin(pluginUrl) {
-      console.log("plugin added: ", pluginUrl);
-      addPlugin(pluginUrl);
+    addPlugin(plugin) {
+      const toast = useToast();
+      console.log("plugin added: ", plugin.name);
+      addPlugin(plugin.url);
+      toast.success(`Plugin ${plugin.name} available now.`);
     },
   }
 };
