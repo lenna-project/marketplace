@@ -4,12 +4,17 @@ import About from "@/views/About.vue";
 
 const routes = [
   {
+    path: "/marketplace",
+    name: "Marketplace",
+    component: Home,
+  },
+  {
     path: "/",
     name: "Home",
     component: Home,
   },
   {
-    path: "/about",
+    path: "/marketplace/about",
     name: "About",
     component: About,
   },
