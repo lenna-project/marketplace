@@ -1,0 +1,55 @@
+
+.navbar[data-v-174c0c93] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #723d67;
+  justify-content: flex-end;
+  display: flex;
+}
+.navbar a[data-v-174c0c93] {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a[data-v-174c0c93]:hover {
+  background-color: #111;
+}
+
+
+.main[data-v-d081d7d4] {
+  padding: 100px;
+  display: flex;
+  background-color: #5a0d33;
+}
+.main button[data-v-d081d7d4] {
+  width: 350px;
+  font-size: 24pt;
+  padding: 10px;
+}
+
+
+.about[data-v-243cff65] {
+  padding: 100px;
+  padding-left: 30%;
+  background-color: #efcda4;
+  height: 100%;
+}
+
+#app {
+  color: black;
+}
+button {
+  color: white;
+  background-color: #9c3c53;
+  border: 2px solid darkgray;
+  border-radius: 15px;
+}
+
+
+/*# sourceMappingURL=911.css.map*/
