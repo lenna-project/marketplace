@@ -1,12 +1,20 @@
 <template>
-  <div class="main"></div>
+  <div class="main">
+    <PluginsManager
+        pluginsjson="plugins.json"
+      />
+  </div>
 </template>
 
 <script>
 import { defineComponent, ref } from "vue";
+import PluginsManager from "@/components/PluginsManager.vue";
+
 export default defineComponent({
   name: "Home",
-  components: {},
+  components: {
+    PluginsManager
+  },
   data() {
     return {};
   },
