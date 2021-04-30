@@ -1,11 +1,14 @@
 <template>
   <div class="plugin" v-if="plugin">
-    <h1>{{ plugin.name }}</h1>
+    <h1>{{ plugin.name }} 
+    <button v-on:click="addPlugin(plugin.url)">add plugin</button></h1>
     {{ plugin.description }}
   </div>
 </template>
 
 <script>
+import { addPlugin } from "../config";
+
 export default {
   name: "Plugin",
   props: {
@@ -14,6 +17,12 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    addPlugin(pluginUrl) {
+      console.log("plugin added: ", pluginUrl);
+      addPlugin(pluginUrl);
+    },
+  }
 };
 </script>
 
