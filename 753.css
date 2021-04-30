@@ -1,0 +1,73 @@
+
+.navbar[data-v-174c0c93] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #723d67;
+  justify-content: flex-end;
+  display: flex;
+}
+.navbar a[data-v-174c0c93] {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a[data-v-174c0c93]:hover {
+  background-color: #111;
+}
+
+
+.plugin[data-v-2b64642f] {
+  margin: 10px;
+  width: 500px;
+  background-color: #efcda4;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+
+.plugins-manager {
+  margin: 10px;
+  background-color: #e1b5a2;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px white;
+}
+
+
+.main[data-v-6e44cf76] {
+  padding: 100px;
+  display: flex;
+  background-color: #5a0d33;
+}
+.main button[data-v-6e44cf76] {
+  width: 350px;
+  font-size: 24pt;
+  padding: 10px;
+}
+
+
+.about[data-v-243cff65] {
+  padding: 100px;
+  padding-left: 30%;
+  background-color: #efcda4;
+  height: 100%;
+}
+
+#app {
+  color: black;
+}
+button {
+  color: white;
+  background-color: #9c3c53;
+  border: 2px solid darkgray;
+  border-radius: 15px;
+}
+
+
+/*# sourceMappingURL=753.css.map*/
