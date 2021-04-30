@@ -15,19 +15,21 @@ module.exports = (env = {}) => ({
   },
   target: "web",
   entry: {
-    "marketplace": path.join(__dirname, 'src/main.js'),
+    marketplace: path.join(__dirname, "src/main.js"),
   },
   // output: {
   //   path: path.resolve(__dirname, './dist'),
   //   publicPath: '/dist/'
   // },
   output: {
-    publicPath: "auto",
+    publicPath: !env.prod
+      ? "http://localhost:3001/"
+      : "https://lenna.app/marketplace/",
   },
   resolve: {
     extensions: [".vue", ".jsx", ".js", ".json"],
     alias: {
-      '@': path.join(__dirname, 'src/'),
+      "@": path.join(__dirname, "src/"),
       // this isn't technically needed, since the default `vue` entry for bundlers
       // is a simple `export * from '@vue/runtime-dom`. However having this
       // extra re-export somehow causes webpack to always invalidate the module
@@ -66,7 +68,7 @@ module.exports = (env = {}) => ({
     }),
     new ModuleFederationPlugin({
       name: "marketplace",
-      library: { type: 'amd', name: 'marketplace' },
+      library: { type: "amd", name: "marketplace" },
       shared: {
         vue: {
           requiredVersion: deps.vue,
@@ -75,17 +77,15 @@ module.exports = (env = {}) => ({
           //singleton: true,
           //eager: true
         },
-        "vue-router": deps["vue-router"]
+        "vue-router": deps["vue-router"],
       },
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./index.html")
+      template: path.resolve(__dirname, "./index.html"),
     }),
     new VueLoaderPlugin(),
     new CopyPlugin({
-      patterns: [
-        "public"
-      ],
+      patterns: ["public"],
     }),
   ],
   devServer: {

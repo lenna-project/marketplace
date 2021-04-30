@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-cli serve",
     "serve": "serve dist -p 3001",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --env prod=true",
     "clean": "rm -rf dist"
   },
   "dependencies": {
