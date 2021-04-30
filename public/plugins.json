@@ -1,10 +1,17 @@
 [
     {
-        "name": "watermark",
-        "description": "Plugin to watermark images",
+        "name": "cartoonify",
+        "description": "Plugin to create a cartoon style.",
         "author": "chriamue",
-        "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/watermark",
-        "url": "https://lenna.app/lenna-plugins-extra/watermark/remoteEntry.js"
+        "homepage": "https://github.com/lenna-project/lenna-plugins",
+        "url": "https://lenna.app/lenna-plugins/cartoonify/remoteEntry.js"
+    },
+    {
+        "name": "desaturate",
+        "description": "Plugin to desaturate by photon.",
+        "author": "chriamue",
+        "homepage": "https://github.com/silvia-odwyer/photon",
+        "url": "https://lenna.app/lenna-plugins/desaturate/remoteEntry.js"
     },
     {
         "name": "photon-filters",
@@ -12,5 +19,12 @@
         "author": "chriamue",
         "homepage": "https://github.com/silvia-odwyer/photon",
         "url": "https://lenna.app/lenna-plugins/photon-filters/remoteEntry.js"
+    },
+    {
+        "name": "watermark",
+        "description": "Plugin to watermark images",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/watermark",
+        "url": "https://lenna.app/lenna-plugins-extra/watermark/remoteEntry.js"
     }
 ]
