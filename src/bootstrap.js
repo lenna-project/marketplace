@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import route from "./router";
-import "./index.css";
+import "./styles/index.scss";
 
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";

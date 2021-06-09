@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <a href="/">Home</a>
-    <a href="https://github.com/lenna-project">Github</a>
+    <router-link to="/marketplace">Marketplace</router-link>
     <router-link to="/about">About</router-link>
   </div>
 </template>
@@ -11,28 +11,39 @@ export default {
   name: "Navbar",
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+@import "@/styles/_variables.scss";
+
+$navbar_padding: 40px;
+
 .navbar {
+  padding: $navbar_padding;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - 2* #{$navbar_padding});
+  height: 40px;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #723d67;
+  background-color: $nav_background;
   justify-content: flex-end;
   display: flex;
+  color: $text_color;
+  text-transform: uppercase;
 }
 
 .navbar a {
   display: block;
-  color: white;
+  color: $text_color;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background-color: #111;
+  background-color: $primary_color;
+}
+.navbar .router-link-active {
+  color: white;
+  background-color: $primary_color;
 }
 </style>

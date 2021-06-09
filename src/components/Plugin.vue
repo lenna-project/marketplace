@@ -17,7 +17,7 @@
 
 <script>
 import { addPlugin } from "../config";
-import { useToast } from "vue-toastification";
+import { useToast, POSITION } from "vue-toastification";
 
 export default {
   name: "Plugin",
@@ -32,18 +32,25 @@ export default {
       const toast = useToast();
       console.log("plugin added: ", plugin.name);
       addPlugin(plugin.url);
-      toast.success(`Plugin ${plugin.name} available now.`);
+      toast.success(`Plugin ${plugin.name} available now.`, { position: POSITION.TOP_LEFT });
     },
   }
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/styles/_variables.scss";
 .plugin {
   margin: 10px;
-  width: 500px;
-  background-color: #efcda4;
-  border: 1px solid darkgray;
+  padding: 5px;
+  min-width: 250px;
+  min-height: 250px;
+  background-color: white;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>

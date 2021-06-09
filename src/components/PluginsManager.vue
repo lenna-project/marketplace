@@ -1,7 +1,9 @@
 <template>
   <div class="plugins-manager">
-    <div class="list-group-item" v-for="item in plugins" :key="item.url">
-      <Plugin :plugin="item" />
+    <div class="plugins">
+      <div class="list-group-item" v-for="item in plugins" :key="item.url">
+        <Plugin :plugin="item" />
+      </div>
     </div>
   </div>
 </template>
@@ -49,12 +51,14 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped lang="scss">
+@import "@/styles/_variables.scss";
 .plugins-manager {
-  margin: 10px;
-  background-color: #e1b5a2;
-  border: 1px solid darkgray;
-  border-radius: 5px;
-  box-shadow: 10px 5px 5px white;
+  background-color: $body_background;
+}
+.plugins {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 </style>

@@ -20,11 +20,13 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped lang="css">
+<style scoped lang="scss">
+@import "@/styles/_variables.scss";
 .main {
-  padding: 100px;
-  display: flex;
-  background-color: #5a0d33;
+  background-color: $body_background;
+  padding: 150px;
+  padding-top: 120px;
+  text-align: center;
 }
 .main button {
   width: 350px;

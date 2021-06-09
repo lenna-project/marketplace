@@ -51,13 +51,15 @@ module.exports = (env = {}) => ({
         },
       },
       {
-        test: /\.css$/,
+        test: /\.(css|s[ac]ss)$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: { hmr: !env.prod },
-          },
+          process.env.NODE_ENV !== "production"
+            ? "style-loader"
+            : MiniCssExtractPlugin.loader,
+          // Translates CSS into CommonJS
           "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
         ],
       },
     ],
