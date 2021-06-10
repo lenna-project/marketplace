@@ -1,17 +1,21 @@
 <template>
   <div class="plugin" v-if="plugin">
-    <div style="display: flex; justify-content: space-between;">
-    <h1>{{ plugin.name }} 
-    <button v-on:click="addPlugin(plugin)">add plugin</button></h1>
-    {{plugin.author}}
+    <div style="display: flex; justify-content: space-between">
+      <h1>
+        {{ plugin.name }}
+        <button v-on:click="addPlugin(plugin)">add plugin</button>
+      </h1>
+      {{ plugin.author }}
     </div>
-        <div style="display: flex; justify-content: space-between;">
-          <p>
-            {{ plugin.description }}
-          </p>
-          <a v-bind:href="plugin.homepage">Homepage</a>
+    <div>
+      <img id="icon" v-if="icon" :src="icon" />
     </div>
-    
+    <div style="display: flex; justify-content: space-between">
+      <p>
+        {{ plugin.description }}
+      </p>
+      <a v-bind:href="plugin.homepage">Homepage</a>
+    </div>
   </div>
 </template>
 
@@ -25,16 +29,37 @@ export default {
     plugin: Object,
   },
   data() {
-    return {};
+    return {
+      icon: null,
+    };
   },
   methods: {
     addPlugin(plugin) {
       const toast = useToast();
       console.log("plugin added: ", plugin.name);
       addPlugin(plugin.url);
-      toast.success(`Plugin ${plugin.name} available now.`, { position: POSITION.TOP_LEFT });
+      toast.success(`Plugin ${plugin.name} available now.`, {
+        position: POSITION.TOP_LEFT,
+      });
     },
-  }
+    async loadIcon() {
+      if (this.plugin.url) {
+        System.import(this.plugin.url)
+          .then((module) => {
+            module.get("default").then((plugin) => {
+              let m = plugin();
+              if (m.icon) {
+                this.icon = m.icon();
+              }
+            });
+          })
+          .catch((e) => console.log(e));
+      }
+    },
+  },
+  created() {
+    this.loadIcon();
+  },
 };
 </script>
 
@@ -52,5 +77,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+#icon {
+  height: 96px;
 }
 </style>
