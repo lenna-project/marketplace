@@ -1,7 +1,14 @@
 <template>
   <div class="plugins-manager">
+    <div class="searchbar">
+      <input type="text" placeholder="Search..." v-model="search" />
+    </div>
     <div class="plugins">
-      <div class="list-group-item" v-for="item in plugins" :key="item.url">
+      <div
+        class="list-group-item"
+        v-for="item in filteredPlugins()"
+        :key="item.url"
+      >
         <Plugin :plugin="item" />
       </div>
     </div>
@@ -22,6 +29,7 @@ export default defineComponent({
   },
   data() {
     return {
+      search: "",
       plugins: [],
     };
   },
@@ -46,6 +54,15 @@ export default defineComponent({
           })
           .catch(console.log);
       }
+    },
+    filteredPlugins() {
+      return this.plugins.filter((plugin) => {
+        return (
+          plugin.name.toLowerCase().indexOf(this.search.toLowerCase()) != -1 ||
+          plugin.description.toLowerCase().indexOf(this.search.toLowerCase()) !=
+            -1
+        );
+      });
     },
   },
 });
