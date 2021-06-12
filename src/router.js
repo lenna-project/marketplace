@@ -14,7 +14,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/marketplace/about",
+    path: "/about",
     name: "About",
     component: About,
   },

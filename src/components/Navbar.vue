@@ -2,7 +2,7 @@
   <div class="navbar">
     <a href="/">Home</a>
     <router-link to="/marketplace">Marketplace</router-link>
-    <router-link to="/about">About</router-link>
+    <a href="/about">About</a>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ $navbar_padding: 40px;
   padding: $navbar_padding;
   position: fixed;
   top: 0;
-  width: calc(100% - 2* #{$navbar_padding});
+  width: calc(100% - 2 * #{$navbar_padding});
   height: 40px;
   margin: 0;
   overflow: hidden;
