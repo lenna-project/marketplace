@@ -33,5 +33,12 @@
         "author": "chriamue",
         "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/denoise",
         "url": "https://lenna.app/lenna-plugins-extra/denoise/remoteEntry.js"
+    },
+    {
+        "name": "text",
+        "description": "Plugin to write text on images.",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/text",
+        "url": "https://lenna.app/lenna-plugins-extra/text/remoteEntry.js"
     }
 ]
