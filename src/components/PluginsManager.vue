@@ -1,8 +1,5 @@
 <template>
   <div class="plugins-manager">
-    <div class="searchbar">
-      <input type="text" placeholder="Search..." v-model="search" />
-    </div>
     <div class="plugins">
       <div
         class="list-group-item"
@@ -23,13 +20,13 @@ export default defineComponent({
   name: "PluginsManager",
   props: {
     pluginsjson: String,
+    search: String,
   },
   components: {
     Plugin,
   },
   data() {
     return {
-      search: "",
       plugins: [],
     };
   },
