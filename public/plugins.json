@@ -40,5 +40,13 @@
         "author": "chriamue",
         "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/text",
         "url": "https://lenna.app/lenna-plugins-extra/text/remoteEntry.js"
+    },
+    {
+        "name": "timestamp",
+        "description": "",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/lenna-plugins-extra/tree/main/timestamp",
+        "url": "https://lenna.app/lenna-plugins-extra/timestamp/remoteEntry.js"
+
     }
 ]
