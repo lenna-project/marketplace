@@ -1,9 +1,9 @@
+"use strict";
 (self["webpackChunk_lenna_project_marketplace"] = self["webpackChunk_lenna_project_marketplace"] || []).push([[955],{
 
 /***/ 955:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
@@ -16,7 +16,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Navbar = (0,runtime_dom_esm_bundler_js_.resolveComponent)("Navbar")
   const _component_router_view = (0,runtime_dom_esm_bundler_js_.resolveComponent)("router-view")
 
-  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)(runtime_dom_esm_bundler_js_.Fragment, null, [
+  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)(runtime_dom_esm_bundler_js_.Fragment, null, [
     (0,runtime_dom_esm_bundler_js_.createVNode)(_component_Navbar),
     (0,runtime_dom_esm_bundler_js_.createVNode)(_component_router_view)
   ], 64))
@@ -25,29 +25,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/components/Navbar.vue?vue&type=template&id=4f7177a8&scoped=true
 
-const _withId = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.withScopeId)("data-v-4f7177a8")
 
-;(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-4f7177a8")
+(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-4f7177a8")
 const _hoisted_1 = { class: "navbar" }
-const _hoisted_2 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("a", { href: "/" }, "Home", -1)
+const _hoisted_2 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("a", { href: "/" }, "Home", -1)
 const _hoisted_3 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createTextVNode)("Marketplace")
-const _hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("a", { href: "/about" }, "About", -1)
+const _hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("a", { href: "/about" }, "About", -1)
 ;(0,runtime_dom_esm_bundler_js_.popScopeId)()
 
-const Navbarvue_type_template_id_4f7177a8_scoped_true_render = /*#__PURE__*/_withId((_ctx, _cache, $props, $setup, $data, $options) => {
+function Navbarvue_type_template_id_4f7177a8_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = (0,runtime_dom_esm_bundler_js_.resolveComponent)("router-link")
 
-  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", _hoisted_1, [
+  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", _hoisted_1, [
     _hoisted_2,
     (0,runtime_dom_esm_bundler_js_.createVNode)(_component_router_link, { to: "/marketplace" }, {
-      default: _withId(() => [
+      default: (0,runtime_dom_esm_bundler_js_.withCtx)(() => [
         _hoisted_3
       ]),
       _: 1
     }),
     _hoisted_4
   ]))
-})
+}
 ;// CONCATENATED MODULE: ./src/components/Navbar.vue?vue&type=template&id=4f7177a8&scoped=true
 
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/components/Navbar.vue?vue&type=script&lang=js
@@ -92,28 +91,27 @@ Appvue_type_script_lang_js.render = render
 var vue_router_esm_bundler_js_ = __webpack_require__(755);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/views/Home.vue?vue&type=template&id=218361c6&scoped=true
 
-const Homevue_type_template_id_218361c6_scoped_true_withId = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.withScopeId)("data-v-218361c6")
 
-;(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-218361c6")
+(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-218361c6")
 const Homevue_type_template_id_218361c6_scoped_true_hoisted_1 = { class: "main" }
 const Homevue_type_template_id_218361c6_scoped_true_hoisted_2 = { class: "top" }
-const Homevue_type_template_id_218361c6_scoped_true_hoisted_3 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("div", null, null, -1)
-const Homevue_type_template_id_218361c6_scoped_true_hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("h1", null, "Marketplace", -1)
+const Homevue_type_template_id_218361c6_scoped_true_hoisted_3 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("div", null, null, -1)
+const Homevue_type_template_id_218361c6_scoped_true_hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("h1", null, "Marketplace", -1)
 const _hoisted_5 = { class: "searchbar" }
 ;(0,runtime_dom_esm_bundler_js_.popScopeId)()
 
-const Homevue_type_template_id_218361c6_scoped_true_render = /*#__PURE__*/Homevue_type_template_id_218361c6_scoped_true_withId((_ctx, _cache, $props, $setup, $data, $options) => {
+function Homevue_type_template_id_218361c6_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginsManager = (0,runtime_dom_esm_bundler_js_.resolveComponent)("PluginsManager")
 
-  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", Homevue_type_template_id_218361c6_scoped_true_hoisted_1, [
-    (0,runtime_dom_esm_bundler_js_.createVNode)("div", Homevue_type_template_id_218361c6_scoped_true_hoisted_2, [
+  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", Homevue_type_template_id_218361c6_scoped_true_hoisted_1, [
+    (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", Homevue_type_template_id_218361c6_scoped_true_hoisted_2, [
       Homevue_type_template_id_218361c6_scoped_true_hoisted_3,
       Homevue_type_template_id_218361c6_scoped_true_hoisted_4,
-      (0,runtime_dom_esm_bundler_js_.createVNode)("div", _hoisted_5, [
-        (0,runtime_dom_esm_bundler_js_.withDirectives)((0,runtime_dom_esm_bundler_js_.createVNode)("input", {
+      (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", _hoisted_5, [
+        (0,runtime_dom_esm_bundler_js_.withDirectives)((0,runtime_dom_esm_bundler_js_.createElementVNode)("input", {
           type: "text",
           placeholder: "Search...",
-          "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (_ctx.search = $event))
+          "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (_ctx.search = $event))
         }, null, 512), [
           [runtime_dom_esm_bundler_js_.vModelText, _ctx.search]
         ])
@@ -124,25 +122,24 @@ const Homevue_type_template_id_218361c6_scoped_true_render = /*#__PURE__*/Homevu
       search: _ctx.search
     }, null, 8, ["search"])
   ]))
-})
+}
 ;// CONCATENATED MODULE: ./src/views/Home.vue?vue&type=template&id=218361c6&scoped=true
 
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/components/PluginsManager.vue?vue&type=template&id=788ad89d&scoped=true
 
-const PluginsManagervue_type_template_id_788ad89d_scoped_true_withId = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.withScopeId)("data-v-788ad89d")
 
-;(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-788ad89d")
+(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-788ad89d")
 const PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_1 = { class: "plugins-manager" }
 const PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_2 = { class: "plugins" }
 ;(0,runtime_dom_esm_bundler_js_.popScopeId)()
 
-const PluginsManagervue_type_template_id_788ad89d_scoped_true_render = /*#__PURE__*/PluginsManagervue_type_template_id_788ad89d_scoped_true_withId((_ctx, _cache, $props, $setup, $data, $options) => {
+function PluginsManagervue_type_template_id_788ad89d_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Plugin = (0,runtime_dom_esm_bundler_js_.resolveComponent)("Plugin")
 
-  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_1, [
-    (0,runtime_dom_esm_bundler_js_.createVNode)("div", PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_2, [
-      ((0,runtime_dom_esm_bundler_js_.openBlock)(true), (0,runtime_dom_esm_bundler_js_.createBlock)(runtime_dom_esm_bundler_js_.Fragment, null, (0,runtime_dom_esm_bundler_js_.renderList)(_ctx.filteredPlugins(), (item) => {
-        return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", {
+  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_1, [
+    (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", PluginsManagervue_type_template_id_788ad89d_scoped_true_hoisted_2, [
+      ((0,runtime_dom_esm_bundler_js_.openBlock)(true), (0,runtime_dom_esm_bundler_js_.createElementBlock)(runtime_dom_esm_bundler_js_.Fragment, null, (0,runtime_dom_esm_bundler_js_.renderList)(_ctx.filteredPlugins(), (item) => {
+        return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", {
           class: "list-group-item",
           key: item.url
         }, [
@@ -151,54 +148,56 @@ const PluginsManagervue_type_template_id_788ad89d_scoped_true_render = /*#__PURE
       }), 128))
     ])
   ]))
-})
+}
 ;// CONCATENATED MODULE: ./src/components/PluginsManager.vue?vue&type=template&id=788ad89d&scoped=true
 
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/components/Plugin.vue?vue&type=template&id=7d393ef9&scoped=true
 
-const Pluginvue_type_template_id_7d393ef9_scoped_true_withId = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.withScopeId)("data-v-7d393ef9")
 
-;(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-7d393ef9")
+(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-7d393ef9")
 const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_1 = {
   key: 0,
   class: "plugin"
 }
-const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_2 = { class: "name" }
-const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_3 = { class: "description" }
-const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("span", null, null, -1)
-const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_5 = { class: "bottom" }
+const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_2 = ["src"]
+const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_3 = { class: "name" }
+const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_4 = { class: "description" }
+const Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_5 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("span", null, null, -1)
+const _hoisted_6 = [
+  Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_5
+]
+const _hoisted_7 = { class: "bottom" }
+const _hoisted_8 = ["href"]
 ;(0,runtime_dom_esm_bundler_js_.popScopeId)()
 
-const Pluginvue_type_template_id_7d393ef9_scoped_true_render = /*#__PURE__*/Pluginvue_type_template_id_7d393ef9_scoped_true_withId((_ctx, _cache, $props, $setup, $data, $options) => {
+function Pluginvue_type_template_id_7d393ef9_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   return ($props.plugin)
-    ? ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_1, [
-        (0,runtime_dom_esm_bundler_js_.createVNode)("div", null, [
+    ? ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_1, [
+        (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", null, [
           ($data.icon)
-            ? ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("img", {
+            ? ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("img", {
                 key: 0,
                 id: "icon",
                 src: $data.icon
-              }, null, 8, ["src"]))
+              }, null, 8, Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_2))
             : (0,runtime_dom_esm_bundler_js_.createCommentVNode)("", true)
         ]),
-        (0,runtime_dom_esm_bundler_js_.createVNode)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_2, (0,runtime_dom_esm_bundler_js_.toDisplayString)($props.plugin.name), 1),
-        (0,runtime_dom_esm_bundler_js_.createVNode)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_3, (0,runtime_dom_esm_bundler_js_.toDisplayString)($props.plugin.description), 1),
-        (0,runtime_dom_esm_bundler_js_.createVNode)("div", null, [
-          (0,runtime_dom_esm_bundler_js_.createVNode)("button", {
-            onClick: _cache[1] || (_cache[1] = $event => ($options.addPlugin($props.plugin)))
-          }, [
-            Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_4
-          ])
+        (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_3, (0,runtime_dom_esm_bundler_js_.toDisplayString)($props.plugin.name), 1),
+        (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_4, (0,runtime_dom_esm_bundler_js_.toDisplayString)($props.plugin.description), 1),
+        (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", null, [
+          (0,runtime_dom_esm_bundler_js_.createElementVNode)("button", {
+            onClick: _cache[0] || (_cache[0] = $event => ($options.addPlugin($props.plugin)))
+          }, _hoisted_6)
         ]),
-        (0,runtime_dom_esm_bundler_js_.createVNode)("div", Pluginvue_type_template_id_7d393ef9_scoped_true_hoisted_5, [
+        (0,runtime_dom_esm_bundler_js_.createElementVNode)("div", _hoisted_7, [
           (0,runtime_dom_esm_bundler_js_.createTextVNode)((0,runtime_dom_esm_bundler_js_.toDisplayString)($props.plugin.author) + " ", 1),
-          (0,runtime_dom_esm_bundler_js_.createVNode)("a", {
+          (0,runtime_dom_esm_bundler_js_.createElementVNode)("a", {
             href: $props.plugin.homepage
-          }, "Homepage", 8, ["href"])
+          }, "Homepage", 8, _hoisted_8)
         ])
       ]))
     : (0,runtime_dom_esm_bundler_js_.createCommentVNode)("", true)
-})
+}
 ;// CONCATENATED MODULE: ./src/components/Plugin.vue?vue&type=template&id=7d393ef9&scoped=true
 
 ;// CONCATENATED MODULE: ./src/config.js
@@ -1583,36 +1582,36 @@ Homevue_type_script_lang_js.__scopeId = "data-v-218361c6"
 /* harmony default export */ const Home = (Homevue_type_script_lang_js);
 ;// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[4].use[0]!./src/views/About.vue?vue&type=template&id=3958689d&scoped=true
 
-const Aboutvue_type_template_id_3958689d_scoped_true_withId = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.withScopeId)("data-v-3958689d")
 
-;(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-3958689d")
+(0,runtime_dom_esm_bundler_js_.pushScopeId)("data-v-3958689d")
 const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_1 = { class: "about" }
-const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_2 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("h1", null, "About Lenna Project", -1)
-const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_3 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("p", null, " Lenna is a library for image processing algorithms. The web page allows to test and use them. ", -1)
-const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("h2", null, "Plugins", -1)
-const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_5 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("p", null, [
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_2 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("h1", null, "About Lenna Project", -1)
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_3 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("p", null, " Lenna is a library for image processing algorithms. The web page allows to test and use them. ", -1)
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_4 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("h2", null, "Plugins", -1)
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_5 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("p", null, [
   /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createTextVNode)(" Lenna allows to plug in more algorithms. Some examples can be found at "),
-  /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("a", { href: "https://github.com/lenna-project/lenna-plugins" }, "lenna-project/lenna-plugins"),
+  /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("a", { href: "https://github.com/lenna-project/lenna-plugins" }, "lenna-project/lenna-plugins"),
   /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createTextVNode)(" on github. ")
 ], -1)
-const _hoisted_6 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("h2", null, "Command Line Interface", -1)
-const _hoisted_7 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("p", null, [
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_6 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("h2", null, "Command Line Interface", -1)
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_7 = /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("p", null, [
   /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createTextVNode)(" A command line interface allows to use the algorithms and run them on multiple images at once. The source for "),
-  /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createVNode)("a", { href: "https://github.com/lenna-project/lenna-cli" }, "lenna-cli"),
+  /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createElementVNode)("a", { href: "https://github.com/lenna-project/lenna-cli" }, "lenna-cli"),
   /*#__PURE__*/(0,runtime_dom_esm_bundler_js_.createTextVNode)(" can be found on github. ")
 ], -1)
+const Aboutvue_type_template_id_3958689d_scoped_true_hoisted_8 = [
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_2,
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_3,
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_4,
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_5,
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_6,
+  Aboutvue_type_template_id_3958689d_scoped_true_hoisted_7
+]
 ;(0,runtime_dom_esm_bundler_js_.popScopeId)()
 
-const Aboutvue_type_template_id_3958689d_scoped_true_render = /*#__PURE__*/Aboutvue_type_template_id_3958689d_scoped_true_withId((_ctx, _cache) => {
-  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createBlock)("div", Aboutvue_type_template_id_3958689d_scoped_true_hoisted_1, [
-    Aboutvue_type_template_id_3958689d_scoped_true_hoisted_2,
-    Aboutvue_type_template_id_3958689d_scoped_true_hoisted_3,
-    Aboutvue_type_template_id_3958689d_scoped_true_hoisted_4,
-    Aboutvue_type_template_id_3958689d_scoped_true_hoisted_5,
-    _hoisted_6,
-    _hoisted_7
-  ]))
-})
+function Aboutvue_type_template_id_3958689d_scoped_true_render(_ctx, _cache) {
+  return ((0,runtime_dom_esm_bundler_js_.openBlock)(), (0,runtime_dom_esm_bundler_js_.createElementBlock)("div", Aboutvue_type_template_id_3958689d_scoped_true_hoisted_1, Aboutvue_type_template_id_3958689d_scoped_true_hoisted_8))
+}
 ;// CONCATENATED MODULE: ./src/views/About.vue?vue&type=template&id=3958689d&scoped=true
 
 ;// CONCATENATED MODULE: ./src/views/About.vue
