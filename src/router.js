@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
+import About from "@lenna-project/lenna-web/src/views/About.vue";
 
 const routes = [
   {
