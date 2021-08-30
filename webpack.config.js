@@ -15,19 +15,17 @@ module.exports = (env = {}) => ({
   },
   target: "web",
   entry: {
-    marketplace: path.join(__dirname, "src/main.js"),
+    marketplace: path.join(__dirname, "src/main.ts"),
   },
   // output: {
   //   path: path.resolve(__dirname, './dist'),
   //   publicPath: '/dist/'
   // },
   output: {
-    publicPath: !env.prod
-      ? "http://localhost:3001/"
-      : "https://lenna.app/marketplace/",
+    publicPath: "auto",
   },
   resolve: {
-    extensions: [".vue", ".jsx", ".js", ".json"],
+    extensions: [".tsx", ".ts", ".js"],
     alias: {
       "@": path.join(__dirname, "src/"),
       // this isn't technically needed, since the default `vue` entry for bundlers
@@ -40,8 +38,30 @@ module.exports = (env = {}) => ({
   module: {
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader",
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        },
+        exclude: /node_modules/,
+      },
+      {
         test: /\.vue$/,
-        use: "vue-loader",
+        loader: "vue-loader",
+        options: {
+          loaders: {
+            scss: [
+              "vue-style-loader",
+              "css-loader",
+              {
+                loader: "sass-loader",
+                options: {
+                  includePaths: [path.resolve(__dirname, "src/styles")],
+                },
+              },
+            ],
+          },
+        },
       },
       {
         test: /\.png$/,
@@ -91,7 +111,9 @@ module.exports = (env = {}) => ({
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname),
+    proxy: {
+      "*": path.join(__dirname),
+    },
     compress: true,
     port: 3001,
     hot: true,

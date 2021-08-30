@@ -2,9 +2,9 @@
   <Navbar />
   <router-view />
 </template>
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "./components/Navbar.vue";
 export default defineComponent({
   name: "Marketplace",
   components: {

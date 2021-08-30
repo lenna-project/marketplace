@@ -11,9 +11,9 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
-import PluginsManager from "@/components/PluginsManager.vue";
+<script lang="ts">
+import { defineComponent } from "vue";
+import PluginsManager from "../components/PluginsManager.vue";
 
 export default defineComponent({
   name: "Home",

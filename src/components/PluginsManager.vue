@@ -12,20 +12,34 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
-import Plugin from "@/components/Plugin.vue";
+import Plugin from "./Plugin.vue";
+
+interface LennaPlugin {
+    name: string;
+    description: string;
+    url?: string;
+    icon?: string;
+}
+
+declare interface PluginsManagerData {
+  plugins: LennaPlugin[];
+}
 
 export default defineComponent({
   name: "PluginsManager",
   props: {
     pluginsjson: String,
-    search: String,
+    search: {
+      type: String,
+      required: true
+    },
   },
   components: {
     Plugin,
   },
-  data() {
+  data(): PluginsManagerData {
     return {
       plugins: [],
     };
