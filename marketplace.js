@@ -1,10 +1,13 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 225:
+/***/ 999:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457)]).then(__webpack_require__.bind(__webpack_require__, 457));
+
+Promise.all(/* import() */[__webpack_require__.e(855), __webpack_require__.e(90)]).then(__webpack_require__.bind(__webpack_require__, 90));
+
 
 /***/ })
 
@@ -197,7 +200,7 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("vue-router", "4.0.11", () => (Promise.all([__webpack_require__.e(761), __webpack_require__.e(617)]).then(() => (() => (__webpack_require__(761))))));
+/******/ 					register("vue-router", "4.0.11", () => (Promise.all([__webpack_require__.e(761), __webpack_require__.e(855)]).then(() => (() => (__webpack_require__(761))))));
 /******/ 					register("vue", "3.2.6", () => (__webpack_require__.e(594).then(() => (() => (__webpack_require__(594))))));
 /******/ 				}
 /******/ 				break;
@@ -209,7 +212,22 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://lenna.app/marketplace/";
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/consumes */
@@ -335,16 +353,16 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			617: () => (loadStrictVersionCheckFallback("default", "vue", [1,3,2], () => (__webpack_require__.e(594).then(() => (() => (__webpack_require__(594))))))),
-/******/ 			755: () => (loadStrictVersionCheckFallback("default", "vue-router", [1,4,0,6], () => (__webpack_require__.e(761).then(() => (() => (__webpack_require__(761)))))))
+/******/ 			855: () => (loadStrictVersionCheckFallback("default", "vue", [1,3,2,6], () => (__webpack_require__.e(594).then(() => (() => (__webpack_require__(594))))))),
+/******/ 			986: () => (loadStrictVersionCheckFallback("default", "vue-router", [1,4,0,11], () => (__webpack_require__.e(761).then(() => (() => (__webpack_require__(761)))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
-/******/ 			"457": [
-/******/ 				755
+/******/ 			"90": [
+/******/ 				986
 /******/ 			],
-/******/ 			"617": [
-/******/ 				617
+/******/ 			"855": [
+/******/ 				855
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -433,7 +451,7 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"457":1};
+/******/ 			var cssChunks = {"90":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -468,7 +486,7 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(617 != chunkId) {
+/******/ 						if(855 != chunkId) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -543,7 +561,7 @@ Promise.all(/* import() */[__webpack_require__.e(617), __webpack_require__.e(457
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(225);
+/******/ 	var __webpack_exports__ = __webpack_require__(999);
 /******/ 	
 /******/ })()
 ;
