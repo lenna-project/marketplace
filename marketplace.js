@@ -201,7 +201,7 @@ Promise.all(/* import() */[__webpack_require__.e(855), __webpack_require__.e(90)
 /******/ 			switch(name) {
 /******/ 				case "default": {
 /******/ 					register("vue-router", "4.0.11", () => (Promise.all([__webpack_require__.e(761), __webpack_require__.e(855)]).then(() => (() => (__webpack_require__(761))))));
-/******/ 					register("vue", "3.2.6", () => (__webpack_require__.e(594).then(() => (() => (__webpack_require__(594))))));
+/******/ 					register("vue", "3.2.12", () => (__webpack_require__.e(594).then(() => (() => (__webpack_require__(594))))));
 /******/ 				}
 /******/ 				break;
 /******/ 			}
