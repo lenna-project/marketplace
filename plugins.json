@@ -7,6 +7,13 @@
         "url": "https://lenna.app/lenna-plugins/cartoonify/remoteEntry.js"
     },
     {
+        "name": "mobilenet",
+        "description": "Plugin to label images.",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/mobilenet-plugin",
+        "url": "https://lenna.app/mobilenet-plugin/remoteEntry.js"
+    },
+    {
         "name": "desaturate",
         "description": "Plugin to desaturate by photon.",
         "author": "chriamue",
