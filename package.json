@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.15.0",
-    "@lenna-project/lenna-web": "https://github.com/lenna-project/lenna-web",
+    "@lenna-proj/lenna-web": "^0.0",
     "@types/webpack-env": "^1.16.2",
     "babel-loader": "^8.1.0",
     "serve": "^12",
