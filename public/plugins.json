@@ -14,6 +14,13 @@
         "url": "https://lenna.app/mobilenet-plugin/remoteEntry.js"
     },
     {
+        "name": "ultraface",
+        "description": "Plugin to label images.",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/ultraface-plugin",
+        "url": "https://lenna.app/ultraface-plugin/remoteEntry.js"
+    },
+    {
         "name": "desaturate",
         "description": "Plugin to desaturate by photon.",
         "author": "chriamue",
