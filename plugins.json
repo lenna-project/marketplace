@@ -21,6 +21,13 @@
         "url": "https://lenna.app/ultraface-plugin/remoteEntry.js"
     },
     {
+        "name": "yolo",
+        "description": "Plugin to detect objects in images and label them.",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/yolo-plugin",
+        "url": "https://lenna.app/yolo-plugin/remoteEntry.js"
+    },
+    {
         "name": "desaturate",
         "description": "Plugin to desaturate by photon.",
         "author": "chriamue",
