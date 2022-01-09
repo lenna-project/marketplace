@@ -28,6 +28,13 @@
         "url": "https://lenna.app/yolo-plugin/remoteEntry.js"
     },
     {
+        "name": "birds",
+        "description": "Plugin to classify birds on images.",
+        "author": "chriamue",
+        "homepage": "https://github.com/lenna-project/birds-plugin",
+        "url": "https://lenna.app/birds-plugin/remoteEntry.js"
+    },
+    {
         "name": "desaturate",
         "description": "Plugin to desaturate by photon.",
         "author": "chriamue",
